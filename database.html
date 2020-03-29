@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Security hanbook</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="database.css">
+</head>
+<body>
+<div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="./handbook">Handbook</a></li>
+                <li><a href="./about-us">About us</a></li>
+                <li><a href="./contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <img src="images/iloq_smart_locking_security-1170x658.jpg" height="658" width="1170"/>
+        <div class="main-content">
+            <main>
+                <h1> Database security </h1>
+                <ul>
+                    <li>
+                        <b>No security testing before deployment</b><br />
+                        
+                        <p>This is also called deployment failure due to lack of care when deployment. Although most of tests case are performed, but still have very few checks are not made to ensure the sustainable of the database in deployment phase. </p>
+                        <b>Solution:</b> test website security with different types of tests before complete deployment
+
+                    </li>
+                    <li>
+                        <b>Poor encryption and data breach come together</b><br />
+                        
+                        <p>You may think that database is a backend part of your setup process and you will focus more on elemination of the Internet-borne threats. But this is not true. It aslo has some issues and hacker can exploits that.</p>
+                        <b>Solution:</b> Using TLS-SSL to encrypt data transmission between platform.
+
+                    </li>
+                    <li>
+                        <b>Feeble cyber security software = broken database</b><br />
+                        
+                        <p>The SQL Slammer worm of 2003 was able to infect more than 90 percent of vulnerable computers within 10 minutes of deployment, taking down thousands of databases in minutes. By exploiting a buffer-overflow vulnerability, the worm's success demonstrates how critical installing security patches and fixes are. However, whether lacking time or resources, not enough businesses keep their systems regularly patched, leaving databases vulnerable.</p>
+                        <b>Solution:</b> take more time and resource to conduct user data security testing and do provide regular patches for their systems
+
+                    </li>
+                    <li>
+                        <b>Stolen Database Backups</b><br />
+                        
+                        <p>External attackers who infiltrate systems to steal data are one threat, but what about those inside the corporation? The report suggests that insiders are also likely to steal archives — including database backups — whether for money, profit or revenge. This is a common problem for the modern enterprise, and businesses should consider encrypting archives to mitigate the insider-risk.</p>
+                        <b>Solution:</b> encrypt database archives, implement strict security standards, apply fines in case of violations, use cyber security software, and continuously increase your teams’ awareness by corporate meetings and personal consulting.
+
+                    </li>
+                    <li>
+                        <b>Flaws in features as database security issue</b><br />
+                        
+                        <p>The research team says that over the past three years, every database exploit they've seen has been based on the misuse of a standard database feature. For example, a hacker can gain access through legitimate credentials before forcing the service to run arbitrary code. Although complex, in many cases, this access was gained through simple flaws that allow such systems to be taken advantage of or bypassed completely. Future abuse can be limited by removing unnecessary tools — not by destroying the possibility of zero-day exploits, but by at least shrinking the surface area hackers can study to launch an attack.</p>
+                        <b>Solution:</b> The database can be protected from third-party access by security testing. Also, the simpler its functional structure — the more chances to ensure good protection of each database feature.
+
+                    </li>
+                    <li>
+                        <b>Limitless administration access = poor data protection</b><br />
+                        
+                        <p>Smart division of duties between the administrator and the user ensures limited access only to experienced teams. This way users that are not involved into the database administration process will experience more difficulties if they try to steal any data. If you can limit the number of user accounts, it’s even better because hackers will face more problems in gaining control over the database as well.</p>
+                        <b>Solution:</b> care about who has the access to the sensitive data also to perform banking software testing before releasing it.
+
+                    </li>
+                    <li>
+                        <b>Test website security to avoid SQL injections</b><br />
+                        
+                        <p>A popular method for hackers to take, SQL injections remain a critical problem in the protection of enterprise databases. Applications are attacked by injections, and the database administrator is left to clean up the mess caused by unclean variables and malicious code which is inserted into strings, later passed to an instance of SQL server for parsing and execution.</p>
+                        <b>Solution:</b> protect web-facing databases with firewalls and to test input variables for SQL injection during development.
+
+                    </li>
+                </ul>
+
+            </main>
+            <aside>
+                <ul>
+                    <li><a href="./page1">Data(base) security</a></li>
+                    <li><a href="./page2">security during use (of systems, computers…) </a></li>
+                    <li><a href="./page3">Program security (ie. viruses, ”bad” programming, …)</a></li>
+                    <li><a href="./page4">communications security (phone, Internet, email, traditional mail, talking,
+                        writing…)</a></li>
+                    <li><a href="./page5">security of the devices (computers, phones, smart cards, usb stics…)</a></li>
+                </ul>
+            </aside>
+        </div>
+
+
+        <footer>
+            <div>
+                <p>© 2020 Copy right by IT Consultant Team</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
