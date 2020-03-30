@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
 }
+
 p {
     padding: 0;
     margin: 0;
@@ -15,30 +16,36 @@ p {
 }
 
 header {
-    background: #212529;
+    background: #014a7c;
 }
 
 nav {
 
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0 70px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     padding-right: 20px;
 }
-nav ul li a{
+
+nav ul li a {
     display: block;
     text-decoration: none;
     color: #fff;
     padding: 20px 15px;
 }
+nav ul li a.active {
+    background: #fff;
+    color: #014a7b;
+}
 
-nav ul li a:hover{
+nav ul li a:hover {
     background: #fff;
     color: #333;
 }
@@ -47,7 +54,7 @@ aside {
     display: block;
     flex-grow: 1;
     padding: 20px;
-    border: 1px #333 solid;
+    /*border: 1px #333 solid;*/
     border-radius: 2px;
 }
 
@@ -56,17 +63,29 @@ aside ul {
     list-style-type: none;
 }
 
-aside ul li{
+aside ul li {
     margin-bottom: 10px;
 }
 
-aside ul li a{
-    color: #333;
+aside ul li a {
+    color: #376892;
     text-decoration: none;
 }
 
-aside ul li a:hover{
+aside ul li a.active {
+    color: #35648c;
+    font-weight: bold;
+}
+
+aside ul li a:hover {
     text-decoration: underline;
+    color: #35648c;
+    font-weight: bold;
+}
+
+aside .aside-title {
+    color: #226586;
+    font-size: 22px;
 }
 
 main {
@@ -89,13 +108,23 @@ footer div p {
     overflow: hidden;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     height: 450px;
     object-fit: cover;
 }
 
-@media (min-width: 992px){
+main {
+    padding: 0 20px;
+}
+
+.content-title {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+@media (min-width: 992px) {
     .main-content {
         display: flex;
         flex-direction: row;
@@ -112,9 +141,14 @@ footer div p {
         /*flex-basis: 75%;*/
         flex-grow: 1;
     }
+
     aside {
         flex-basis: 25%;
         border-left: 1px #212529 solid;
+    }
+
+    main ul li {
+        margin-bottom: 20px;
     }
 
 }
