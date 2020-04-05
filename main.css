@@ -130,7 +130,7 @@ main {
 
 .drop-down {
     position: absolute;
-    /*display: none;*/
+    display: none;
     color: #014a7b;
     background: #fff;
     padding: 0;
