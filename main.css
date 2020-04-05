@@ -130,7 +130,7 @@ main {
 
 .drop-down {
     position: absolute;
-     display: none;
+    /*display: none;*/
     color: #014a7b;
     background: #fff;
     padding: 0;
@@ -141,7 +141,14 @@ main {
 
 .drop-down .item {
     display: block;
+    padding: 0;
+
+}
+
+
+.drop-down .item a {
     padding: 10px 15px;
+    color: #014a7b;
 }
 
 .drop-down .item:not(:last-child) {
@@ -161,7 +168,7 @@ main {
     color: #014a7b;
 }
 
-.drop-down .item:hover {
+.drop-down .item:hover > a {
     background: #014a7b;
     color: #fff;
 }
