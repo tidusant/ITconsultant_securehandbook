@@ -31,7 +31,6 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding-right: 20px;
 }
 
 nav ul li a {
@@ -39,15 +38,24 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     padding: 20px 15px;
-}
-nav ul li a.active {
-    background: #fff;
-    color: #014a7b;
+    text-align: center;
 }
 
-nav ul li a:hover {
+nav ul li.active {
     background: #fff;
-    color: #333;
+    
+}
+nav ul li.active a{
+   
+    color: #014a7b;
+}
+nav ul li:hover {
+    background: #fff;
+   
+}
+nav ul li a:hover {
+    
+    color: #014a7b;
 }
 
 aside {
@@ -121,6 +129,55 @@ main {
 .content-title {
     text-align: center;
     margin-top: 0;
+}
+
+.drop-down-wrapper {
+    position: relative;
+}
+
+.drop-down {
+    position: absolute;
+    display: none;
+    color: #014a7b;
+    background: #fff;
+    padding: 0;
+    min-width: 250px;
+    border: 1px solid #014a7b;
+    box-sizing: border-box;
+}
+
+.drop-down .item {
+    display: block;
+    padding: 0;
+
+}
+
+
+.drop-down .item a {
+    padding: 10px 15px;
+    color: #014a7b;
+}
+
+.drop-down .item:not(:last-child) {
+    border-bottom: 1px solid #014a7b;
+}
+
+.drop-down-wrapper:hover {
+    background: #fff;
+    color: #014a7b;
+}
+
+.drop-down-wrapper:hover .drop-down {
+    display: block;
+}
+
+.drop-down-wrapper:hover > a {
+    color: #014a7b;
+}
+
+.drop-down .item:hover > a {
+    background: #014a7b;
+    color: #fff;
 }
 
 
